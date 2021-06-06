@@ -43,14 +43,6 @@ const HoverInnerWrapper = styled.div`
   padding: ${props => props.padding};
 `
 
-const Wrapper = styled.div`
-  background: ${props => `url("${props.img}") no-repeat center center fixed`};
-  background-size: cover;
-  width: ${props => props.width};
-  height: ${props => props.height};
-  overflow: hidden;
-`
-
 const HoverWrap = ({ aniProps, item, height, widthCat, isWideScreen, hovered, push}) => {
   return (
     <HoverWrapper height={height} isWideScreen={isWideScreen} hovered={hovered} style={{...!aniProps ? { opacity: 0 } : {...aniProps}}}>
