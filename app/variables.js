@@ -92,29 +92,6 @@ const sidebarDrawerTransitionDuration = {
 
 const sliderInterval = 100;
 
-const identities = {
-    d: {
-        title: 'DIFFERENT',
-        color: '#DA523A',
-        text: 'We are equipped with knowledge on multiple design software which help us execute our boundless ideas that give us extraordinary result. We provide stories and design strategy with unique technical procedures.'
-    },
-    o: {
-      title: 'ORIGINAL',
-      color: '#FCB94D',
-      text: '24DOTS we connect ideas, at heart we approach every brief with a clear understanding of the business problem, we provide solution and what return on investment is needed for the campaign to be a success. Our strategy is determined by the problem we are facing. We are adaptable which lead us to a magical journey that never ends.'
-    },
-    t: {
-      title: 'THRILLING',
-      color: '#138E91',
-      text: '24DOTS is more than just a Creative Agency, we let our creative thinking and our work do the talking. We are people with boundless ideas and we take pride in our ability. We provide quality of work and never doubt possibilities of solution. We are not original yet we are unique.'
-    },
-    s: {
-      title: 'SOLUTION',
-      color: '#00A4E4',
-      text: 'Our talent will guide you through your creative needs and together we make ideas happen, from brand strategy to promotional materials, 3D modelling, high quality renders and other printing procedures. 24DOTS our brand name and we are committed to serve our clients around the globe.'
-    },
-}
-
 export {
   appBgColor,
   button,
@@ -126,7 +103,6 @@ export {
   iconSizeConfig,
   coverBgColor,
   taglineColor,
-  identities,
   colorSettings,
   globalTexts,
   sidebarDrawerTransitionDuration,
