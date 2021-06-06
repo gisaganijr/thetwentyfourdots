@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import P from 'components/P';
-import { contentMargin, colors, outlinedButton } from 'variables';
+import { contentMargin, colors } from 'variables';
 import { Link } from '@material-ui/core';
 
 const MainWrapper = styled.div`
@@ -23,17 +23,17 @@ const ItemTextMobile = ({portfolio, isWideScreen, push }) => {
     
   return (
     <MainWrapper>
-        <Link 
-          href="#" 
-          color="inherit" 
-          onClick={(e) => {
-            e.preventDefault();
+      <Link 
+        href="#" 
+        color="inherit" 
+        onClick={(e) => {
+          e.preventDefault();
 
-            push(`/portfolio/${portfolio.name}`)}
-          }
-        >
-          <P fontType="medium" noMargin header size="xs" fontSizeLineHeight>{portfolio.title}</P>
-        </Link>
+          push(`/portfolio/${portfolio.name}`)}
+        }
+      >
+        <P fontType="medium" noMargin header size="xs" fontSizeLineHeight>{portfolio.title}</P>
+      </Link>
     </MainWrapper>
   )
 

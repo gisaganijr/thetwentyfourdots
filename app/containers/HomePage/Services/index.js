@@ -8,27 +8,10 @@ import { ReactComponent as KnowHow3D } from 'images/KnowHow3D.svg';
 import { ReactComponent as KnowHowBrandDesign } from 'images/KnowHowBrandDesign.svg';
 import { ReactComponent as KnowHowDigitalCampaign } from 'images/KnowHowDigitalCampaign.svg';
 import { ReactComponent as KnowHowEnvironment } from 'images/KnowHowEnvironment.svg';
-// import KnowHow3D from './svgs/KnowHow3D';
-// import KnowHowBrandDesign from './svgs/KnowHowBrandDesign';
-// import KnowHowDigitalCampaign from './svgs/KnowHowDigitalCampaign';
-// import KnowHowEnvironment from './svgs/KnowHowEnvironment';
 import PointerTitle from 'components/PointerTitle';
 import ContentWrapper from 'components/ContentWrapper';
 import PageSection from 'components/PageSection';
 import { Transition, config } from 'react-spring/renderprops'
-
-const MainWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  background: ${colors.darkCyan};
-  color: ${colors.white};
-`
-
-const ItemWrapper = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-`
 
 const Services = forwardRef(({width, widthCat, isWideScreen}, ref) => {
   const pageRef = useRef();

@@ -1,19 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
 import styled from 'styled-components';
-import Headline from './Headline';
-import TextWrapper from './TextWrapper';
 import { contentMargin, colors } from 'variables';
-import { SvgIcon , Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import P from 'components/P';
-import H3 from 'components/H3';
 import CustomGrid  from 'components/CustomGrid';
-import CustomSVG from 'components/CustomSVG';
 import { Spring, Transition, config} from 'react-spring/renderprops';
 import { CustomSpring, AniLoadingWrapper } from 'components/Spring/';
-
-function isEven(n) {
-  return n % 2 == 0;
-}
 
 const ItemWrapper = styled.div`
   min-width: 25%;

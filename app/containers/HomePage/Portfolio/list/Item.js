@@ -1,23 +1,15 @@
 import React, { useMemo, useRef, useState, useEffect } from 'react';
 import styled from 'styled-components';
-import Headline from '../Headline';
-import TextWrapper from '../TextWrapper';
 import { getImageDimensionOnFilename } from 'helpers';
 import { contentMargin, colors, outlinedButton, imageCurtainColor } from 'variables';
-import BigCircle from 'images/BigCircle.svg';
-import CustomOutlinedButton from 'components/CustomButton/CustomOutlinedButton';
 import { CustomSpring, Curtain, Spinner } from 'components/Spring/';
 import { Grid } from '@material-ui/core';
-import P from 'components/P';
 import ItemText from './ItemText';
 import ItemTextMobile  from './ItemTextMobile';
-import clover from 'images/portfolio/clover/C-1.2.jpg';
-import CircleFrame from '../CircleFrame';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import CustomCircularProgress from 'components/CustomCircularProgress';
 import LoaderWrapper from 'components/CustomCircularProgress/LoaderWrapper';
 import _ from "lodash";
-import { Spring, Transition, config } from 'react-spring/renderprops';
+import { config } from 'react-spring/renderprops';
 
 const ImageWrapper = styled.div`
   position: relative;
@@ -27,14 +19,6 @@ const ImageWrapper = styled.div`
 
 function isEven(n) {
   return n % 2 == 0;
-}
-
-const Button = (props) => {
-  return (
-    <CustomOutlinedButton {...outlinedButton.dark} bold={true} {...props}>
-      Explore projects
-    </CustomOutlinedButton>
-  )
 }
 
 const Item = ({widthCat, itemNo, portfolio, isWideScreen, push, loadedImage}) => {

@@ -4,8 +4,6 @@ import P from 'components/P';
 import { Link } from '@material-ui/core';
 import { contentMargin, colors, outlinedButton } from 'variables';
 import CustomOutlinedButton from 'components/CustomButton/CustomOutlinedButton';
-import CustomCircularProgress from 'components/CustomCircularProgress';
-import LoaderWrapper from 'components/CustomCircularProgress/LoaderWrapper';
 import _ from "lodash";
 import { config } from 'react-spring/renderprops';
 import { CustomSpring, Curtain, Spinner } from 'components/Spring/';

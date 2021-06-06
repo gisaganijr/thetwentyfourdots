@@ -4,8 +4,7 @@ import { colors } from 'variables';
 import { Grid } from '@material-ui/core';
 import WeAreTheTwentyFourDotsText from 'components/WeAreTheTwentyFourDotsText';
 import P from 'components/P';
-import { getHeaderTextSize } from 'helpers';
-import {Spring, config} from 'react-spring/renderprops';
+import { config} from 'react-spring/renderprops';
 import { CustomSpring, AniLoadingWrapper } from 'components/Spring/';
 
 const HeadlineTextWrapper = styled.div`

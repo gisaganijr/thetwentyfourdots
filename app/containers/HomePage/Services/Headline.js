@@ -4,8 +4,7 @@ import { contentMarginSmall, colors, outlinedButton } from 'variables';
 import { Grid } from '@material-ui/core';
 import CustomOutlinedButton from 'components/CustomButton/CustomOutlinedButton';
 import P from 'components/P';
-import { getHeaderTextSize } from 'helpers';
-import {Spring, config} from 'react-spring/renderprops'
+import { config} from 'react-spring/renderprops'
 import { CustomSpring, AniLoadingWrapper } from 'components/Spring/';
 
 const ColumnWrapper = styled.div`
