@@ -86,41 +86,10 @@ export function HomePage({
 
     return () => {
       resetPortfolios();
-      //setShowPreloader(false);
       window.removeEventListener('scroll', handleScroll);
     }
   }, [])
   
-  // useEffect(() => {
-  //   if (activeSlideIndex !== 0) return;
-
-  //   const imagesNotYetLoaded = filter(sliders, (o, ctr) => {
-  //     return o.index === 0 && (o.imageLoaded === undefined || o.imageLoaded === false);
-  //   });
-
-  //   if (sliders.length > 0 && imagesNotYetLoaded.length === 0) 
-  //     setShowPreloader(false);
-  // }, [sliders]);
-
-  // useEffect(() => {
-  //   let _portfolios = []; 
-  //   mapKeys(portfolios, (portfolio, key) => {
-  //     _portfolios.push({name: key, ...portfolio});
-  //   })
-
-  //   const noOfImageToWatch = 1;
-  //   const gridItemsNeedToLoad = filter(_portfolios, (o, ctr) => {
-  //     return ctr <= noOfImageToWatch;
-  //   });
-
-  //   const imagesNotYetLoaded = filter(_portfolios, (o, ctr) => {
-  //     return (o.imageLoaded === undefined || o.imageLoaded === false) && ctr <= noOfImageToWatch;
-  //   });
-
-  //   if (gridItemsNeedToLoad.length > 0 && imagesNotYetLoaded.length === 0) 
-  //     setShowPreloader(false);
-  // }, [portfolios]);
-
   useEffect(() => {
     if (_isWideScreen)
       return;
