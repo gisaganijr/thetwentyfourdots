@@ -1,11 +1,9 @@
 import React, { useEffect, useMemo, useLayoutEffect, useState, useRef } from 'react';
 import styled from 'styled-components';
-import { getImageDimensionOnFilename } from 'helpers';
 import { imageCurtainColor, colors, contentMargin, pageContentMarginSmall } from 'variables';
 import { useSpring, config, animated } from 'react-spring';
 import { CustomSpring, Curtain, AniLoadingWrapper } from 'components/Spring/';
 import { Link } from '@material-ui/core';
-import { sum, toInteger, includes, filter, round, floor } from 'lodash';
 import CustomCircularProgress from 'components/CustomCircularProgress';
 import LoaderWrapper from 'components/CustomCircularProgress/LoaderWrapper';
 import P from 'components/P';
@@ -87,7 +85,6 @@ const HoverText = ({ aniProps, item, height, widthCat, isWideScreen, hovered, pu
                 <P 
                   fontType="bold"
                   size="md" 
-                  //widthCat={widthCat}
                   noMargin={true} 
                   header
                   customLineHeight="1rem"
@@ -179,7 +176,6 @@ const ImageItem = ({
           to={{ height: '0%' }}
           config={{...config.slow}}
           noLoader={true}
-          //delay={500}
           renderAni={(aniProps) => (
             <Curtain style={{ ...aniProps ? { ...aniProps } : { height: '100%' }} } />
           )}
@@ -241,7 +237,6 @@ const ImageItem = ({
           )}
         />
       </div>
-      {/* <img src={item.image} width="100%" height="auto" /> */}
     </div>
   )
 }

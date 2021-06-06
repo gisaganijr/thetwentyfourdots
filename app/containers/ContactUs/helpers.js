@@ -1,5 +1,4 @@
 const getPrevSlide = (_slideIndex) => {
-    console.log(`getPrevSlide for ${_slideIndex}`)
     if (parseInt(_slideIndex) === 1)
       return 4;
     else 

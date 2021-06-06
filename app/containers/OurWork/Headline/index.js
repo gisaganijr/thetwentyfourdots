@@ -1,13 +1,10 @@
-import React, { useState, useRef, useEffect, memo, forwardRef, useLayoutEffect,useImperativeHandle, useMemo } from 'react';
+import React, { useState, useEffect, forwardRef } from 'react';
 import styled from 'styled-components';
 import PageSection from 'components/PageSection';
 import { config } from 'react-spring/renderprops';
 import { CustomSpring, Curtain } from 'components/Spring/';
-import PageDivider from 'components/PageDivider';
 import { appBgColor, appBarMinHeight, colors, divider, pageContentMargin, pageContentMarginSmall, } from 'variables'
-import _ from "lodash"
 import Text from './Text';
-const ReversedButton = props => <Button {...props} children={props.children.split('').reverse()} />
 
 const HeadlineMainWrapper = styled.div`
   height: 100vh;
@@ -49,22 +46,6 @@ const ContentWrapper = styled.div`
   top: 0;
   width: 100vw;
   height: 100vh;
-`
-
-const StyledVideo = styled.video`
-    position: absolute;
-    top:  ${props => props.contentType === 'mobile' ? "40%" : "50%"};
-    left: 0;
-    transform: translateY(${props => props.contentType === 'mobile' ? "-40%" : "-50%"});
-    right: 0;
-    margin: auto;
-    min-height: ${props => props.hasSrc ? '100%' : '0px'};
-    min-width: 100%;
-    max-width: 150%;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
 `
 
 const StyledImage = styled.img`
@@ -133,7 +114,6 @@ const Headline = React.memo(forwardRef(({
                 <Curtain color={colors.black} style={{ ...aniProps ? { ...aniProps } : { position: 'absolute', height: '100%' }} } />
               )}
             />
-
             <StyledImage 
               src={imageSrc}
               contentType={contentType}

@@ -1,10 +1,5 @@
-/**
- * Homepage selectors
- */
-
 import { createSelector } from 'reselect';
 import { initialState } from './reducer';
-import { find } from 'lodash';
 
 const selectWork = state => {
   return state.ourWork || initialState
@@ -27,7 +22,6 @@ const makeSelectTouchedWork = () =>
     selectWork,
     workState => workState.touchedWork,
   );
-
 
 export {
   selectWork,

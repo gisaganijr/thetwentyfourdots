@@ -1,24 +1,13 @@
-/*
- * HomeReducer
- *
- * The reducer takes care of our data. Using actions, we can
- * update our application state. To add a new action,
- * add it to the switch statement in the reducer function
- *
- */
 import React from 'react';
 import produce from 'immer';
-import { colors } from 'variables';
 import { CHANGE_LAYOUT_HEIGHT, UPDATE_GRID_ITEMS, LOADED_IMAGE, RETURN_TO_DEFAULT  } from './constants';
 import portfolios from './data';
 
-// The initial state of the App
 export const initialState = {
   portfolios: portfolios,
   layout: []
 };
 
-/* eslint-disable default-case, no-param-reassign */
 const portfolioReducer = (state = initialState, action) =>
   produce(state, draft => {
     switch (action.type) {
@@ -61,7 +50,6 @@ const portfolioReducer = (state = initialState, action) =>
             ...state,
             portfolios: {
               ...state.portfolios,
-              //...updatedPortfolio,
             },
             layout: newLayout
         };

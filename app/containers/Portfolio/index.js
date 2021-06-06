@@ -21,10 +21,7 @@ import { makeSelectShowFallback } from 'containers/Fallback/selectors';
 import { setMenuButtonColor, setIsLogoColoured, setScrollTop, setAppBarBgColor, setShowPreloader } from 'containers/Navigation/actions';
 import { makeShowPreloader, makeMainMenuButtonColor, makeIsLogoColoured, makeAppBarBgColor } from 'containers/Navigation/selectors';
 import { getNavigationColor } from 'helpers';
-import { filter, toInteger } from 'lodash';
 import { hideFallback } from 'containers/Fallback/actions';
-import RGL, { WidthProvider } from "react-grid-layout";
-//import portfolios from './data';
 const key = 'portfolio';
 
 const MainPageWrapper = styled.div`
@@ -64,7 +61,6 @@ function Portfolio(props) {
     return null;
   }
   
-  const gridItems = portfolio.gridItems || [];
   const _isWideScreen = isWideScreen(widthCat);
   const headlineRef = useRef();
   const listRef = useRef();

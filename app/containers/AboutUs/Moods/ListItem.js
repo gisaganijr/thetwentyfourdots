@@ -34,8 +34,6 @@ const ListItem = ({isWideScreen, idx, title, aniProps}) => {
           <CustomSVG 
             component={CircleFilled} 
             viewBox="0 0 25 25"
-            //width="25"
-            //height="25"
           />
         </div>
         <p style={{ margin: '0px', padding: '0px 18px' }}>{title}</p>

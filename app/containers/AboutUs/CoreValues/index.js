@@ -1,9 +1,8 @@
 import React, { forwardRef, useRef, useEffect, useState, useMemo } from 'react';
-import styled from 'styled-components';
 import { contentMargin, contentMarginSmall, colors, divider } from 'variables';
 import PointerTitle from 'components/PointerTitle';
 import ListItem from './ListItem';
-import { SvgIcon , Grid, withWidth } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import ContentWrapper from 'components/ContentWrapper';
 import P from 'components/P';
 import PageSection from 'components/PageSection';
@@ -55,8 +54,6 @@ const CoreValues = forwardRef(({width, widthCat, isWideScreen}, ref) => {
   }, [])
   
   function handleScroll(e) {
-    //desktop: Scrolled in this page by 35%
-    //mobile: Scrolled in this page by 10%
     const adjustment = isWideScreen ? 0.65 : 0.90
     if (pageRef.current && pageRef.current !== null && pageRef.current.getBoundingClientRect().bottom <= window.innerHeight + (window.innerHeight * adjustment)) {
       setIsPageScrolled(true);

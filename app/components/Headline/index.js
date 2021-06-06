@@ -23,7 +23,6 @@ const Headline = ({
   const [items, setItems] = useState([])
   const [headlineTextMaxHeight, setHeadlineTextMaxHeight] = useState(0);
   const headlineTextRef = useRef(null);
-  console.log("Headline headerText", headerText)
    
   useEffect(() => {
     let newItems = [];

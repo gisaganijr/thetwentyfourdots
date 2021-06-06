@@ -200,12 +200,11 @@ const Index = forwardRef(({
 }, ref) => {
 
   const [contentType, setContentType] = useState();
+
   useEffect(() => {
-    console.log("width", width);
-    console.log("height", height);
     setContentType(getContentType(width, height)); 
   }, [width, height])
-  console.log("contentType", contentType)
+
   let _height = height;
   if (!isWideScreen)
     _height = height - appBarMinHeight;
@@ -228,12 +227,12 @@ const Index = forwardRef(({
   }
 
   return (
-      <HeadlineMainWrapper 
-        isWideScreen={isWideScreen} 
-        ref={ref}
-      >
-        <Headline {...headlineProps} />
-      </HeadlineMainWrapper>
+    <HeadlineMainWrapper 
+      isWideScreen={isWideScreen} 
+      ref={ref}
+    >
+      <Headline {...headlineProps} />
+    </HeadlineMainWrapper>
   )
 })
 

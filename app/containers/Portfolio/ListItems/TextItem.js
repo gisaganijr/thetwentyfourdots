@@ -4,18 +4,10 @@ import { colors, contentMargin, divider } from 'variables';
 import ContentWrapper from 'components/ContentWrapper';
 import ContentInnerWrapper from 'components/ContentInnerWrapper';
 import P from 'components/P';
-import { Grid } from '@material-ui/core';
 import { toInteger, round, floor, ceil } from 'lodash';
-import color from '@material-ui/core/colors/amber';
-import { lighten } from 'polished'
 import PageSection from 'components/PageSection';
 import { useSpring, config, animated } from 'react-spring';
 import { CustomSpring, Curtain, AniLoadingWrapper } from 'components/Spring/';
-
-const Wrapper = styled.div`
-  width: 100%;
-  padding: ${props => props.isWideScreen ? "5% 15%" : "2rem 3rem"};
-`;
 
 const TextItem = ({rowHeight, item, width, height, widthCat, isWideScreen, 
   gridItem, portfolioId, selPortfolioName, changeLayoutHeight

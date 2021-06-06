@@ -63,8 +63,6 @@ const ListItems = forwardRef(({
                   data-grid={isWideScreen ? item.layout : item.smLayout || item.layout} 
                   style={
                     item.image ? { } : { backgroundColor: colors[item.bgColor] }
-                    //item.image ? { } : { display: "flex", justifyContent: "center", backgroundColor: colors[item.bgColor] }
-                    //item.image ? { overflow: "hidden" } : { backgroundColor: colors[item.bgColor] }
                   }
                 >
                   { item.image 

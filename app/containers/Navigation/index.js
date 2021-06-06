@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { push } from 'connected-react-router'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { useSelector } from 'react-redux'
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 import CustomToolbar from 'components/CustomToolbar';
@@ -18,10 +17,8 @@ import { makeSelectShowFallback } from '../Fallback/selectors';
 import { makeShowWelcome, makeShowPreloader, makeIsNavMainOpen, makeIsNavMobileOpen, makeMainMenuButtonColor, makeIsLogoColoured, makeScrollTop, makeAppBarBgColor, makeThemeColor } from './selectors';
 import { createMuiTheme } from '@material-ui/core/styles';
 import reducer from './reducer';
-
 import { withProps, renameProp } from 'recompose';
 import windowDimensions from 'react-window-dimensions';
-
 import { isWideScreen as _isWideScreen } from 'utils/isWideScreen';
 import withWidth from '@material-ui/core/withWidth';
 import ContactMenu from 'components/ContactMenu/ContactMenu';
@@ -51,17 +48,6 @@ const CopyrightWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-`
-const AppBarMobile = styled.div`
-  position: fixed;
-  z-index: 99999;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: ${smallMargin.page.top};
-  min-height: 56px;
-  width: 100%;
 `
 
 const MainNavigation = ({showWelcome, showPreloader, showFallback, isLogoColoured, mainMenuButtonColor, location, push }) => {
@@ -101,9 +87,6 @@ const MainNavigation = ({showWelcome, showPreloader, showFallback, isLogoColoure
 export function Navigation({
   isNavMobileOpen,
   isNavMainOpen,
-  toggleNavMobile,
-  slideIndex,
-  toggleDrawer,
   closeDrawer,
   themeColor,
   push,
@@ -124,21 +107,6 @@ export function Navigation({
   useInjectReducer({ key, reducer });
   const menuIconRef = useRef();
   const isWideScreen = _isWideScreen(widthCat);
-
-  // useEffect(() => {
-  //   setTimeout(() => closeWelcomePage(), 5000)
-  // }, []);
-
-  useEffect(() => {
-     // console.log('menuIconRef.current.offsetTop!', menuIconRef.current.offsetTop)
-  }, [height])
-
-  function onNavigateToHome() {
-    push('/');
-    toggleDrawer();
-  }
-
-  const bottomMargin = height <= 500 ? true : false
 
   function hideMenuIcon() {
     if (showWelcome || showPreloader || showFallback) 

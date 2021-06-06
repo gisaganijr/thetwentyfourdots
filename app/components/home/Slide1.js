@@ -10,7 +10,6 @@ import ImgSlideWrapper from './ImgSlideWrapper';
 import { includes } from "lodash"
 
 const Slide1 = ({ isWideScreen, width, height, widthCat, bottomMargin}) => {
-  console.log(`width: ${width}`)
     return (  
       <React.Fragment>
         <Zoom {...animationConfig.zoom}>

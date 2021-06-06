@@ -1,16 +1,8 @@
-/*
- * HomePage
- *
- * This is the first thing users see of our App, at the '/' route
- */
-
 import React, { useState, useEffect, memo, forwardRef } from 'react';
 import styled from 'styled-components';
 import { colors, outlinedButton } from 'variables'
 import P from 'components/P';
-import { getContentType } from 'helpers';
 import Headline from 'components/Headline';
-import _ from "lodash"
 
 const TextWrapper = styled.div`
   display: flex;

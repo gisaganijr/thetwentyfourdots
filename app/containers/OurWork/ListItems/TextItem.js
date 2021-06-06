@@ -2,9 +2,7 @@ import React, { useCallback, useLayoutEffect, useState, useRef } from 'react';
 import styled from 'styled-components';
 import { colors, divider, appBarMinHeight } from 'variables';
 import P from 'components/P';
-import { Grid } from '@material-ui/core';
 import { toInteger, round, floor } from 'lodash';
-import color from '@material-ui/core/colors/amber';
 
 const Wrapper = styled.div`
   width: 100%;

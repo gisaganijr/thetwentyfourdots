@@ -1,13 +1,9 @@
 import React, { forwardRef } from 'react';
-import styled from 'styled-components';
-import { useDispatch } from 'react-redux';
 import { colors, divider, appBarMinHeight } from 'variables';
 import ContentWrapper from 'components/ContentWrapper';
 import ContentInnerWrapper from 'components/ContentInnerWrapper';
-import PointerTitle from 'components/PointerTitle';
 import PageSection from 'components/PageSection';
 import P from 'components/P';
-import { getHeaderTextSize } from 'helpers';
 
 const Headline = forwardRef(({width, widthCat, isWideScreen, isLogoColoured, portfolio}, ref) => {
 

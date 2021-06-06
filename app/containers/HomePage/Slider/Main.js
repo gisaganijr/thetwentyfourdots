@@ -95,16 +95,6 @@ const Main = forwardRef(({
       setLocalWidthCat(widthCat);
   }, [widthCat])
 
-  // const videoColor = getAverageColor("/videos/ttfd_D.mp4").then(color => {
-  //   console.log('color', color)
-  // }) device, landscape
-  // async function printAverageColor() {
-  //   const color = await getAverageColor("/videos/ttfd_D.mp4");
-  //   console.log('color', color);
-  // }
-
-  // printAverageColor();
-  
   return (
       localActiveSlideIndex === activeSlideIndex ?
         <>

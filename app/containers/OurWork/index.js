@@ -23,7 +23,6 @@ import { getNavigationColor } from 'helpers';
 import ListHeadline from './ListHeadline';
 import ListItems from './ListItems';
 import ContactUs from './ContactUs';
-import { toInteger, filter } from "lodash"
 
 const MainPageWrapper = styled.div`
   ${props => props.height !== undefined && {
