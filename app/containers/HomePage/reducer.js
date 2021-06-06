@@ -6,7 +6,6 @@ import { CHANGE_SLIDE, LOADED_SLIDER_IMAGE, LOADED_PORTFOLIO_IMAGE, RESET_PORTFO
 import { isNumber } from 'lodash';
 import portfolios from 'containers/Portfolio/data';
 
-// The initial state of the App
 export const initialState = {
   slideIndex: 0,
   selectedSlider: {
@@ -70,7 +69,7 @@ export const initialState = {
 };
 
 /* eslint-disable default-case, no-param-reassign */
-const homeReducer2 = (state = initialState, action) =>
+const homeReducer = (state = initialState, action) =>
   produce(state, draft => {
     switch (action.type) {
       case CHANGE_SLIDE: {
@@ -132,4 +131,4 @@ const homeReducer2 = (state = initialState, action) =>
     }
   });
 
-export default homeReducer2;
+export default homeReducer;
