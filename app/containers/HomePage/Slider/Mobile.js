@@ -1,20 +1,12 @@
-/*
- * HomePage
- *
- * This is the first thing users see of our App, at the '/' route
- */
-
 import React, { useRef, useState, useEffect, memo, forwardRef } from 'react';
 import styled from 'styled-components';
-import { appBgColor, sliderInterval, colors, divider, iconSizeConfig, margin, borderColor } from 'variables'
+import { colors } from 'variables'
 import PointerTitle from 'components/PointerTitle';
-import P from 'components/P';
 import PointerAnimation from './PointerAnimation';
 import Typist from 'react-typist';
 import HeadlineText from './HeadlineText';
 
 const TextWrapper = styled.div`
-  ;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

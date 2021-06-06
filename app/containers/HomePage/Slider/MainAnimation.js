@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import {useTransition, useSpring, animated, config } from 'react-spring'
+import React from 'react';
+import { useSpring, animated, config } from 'react-spring'
 
 const MainAnimation = ({mobile = false, children}) => {
 
@@ -10,10 +10,6 @@ const MainAnimation = ({mobile = false, children}) => {
     config: config.slow,
     delay: !mobile ? 1000 : 3000,
   });
-
-  // return transitions.map(({ item, key, props }) =>
-  //   item && <animated.div key={key} style={props}>{children}</animated.div>
-  // )
 
   return (
     <animated.div style={fadeStyles}>{children}</animated.div>

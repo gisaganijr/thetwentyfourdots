@@ -1,12 +1,8 @@
 import React, { useEffect, useState, useRef, memo, useLayoutEffect } from 'react';
 import { push } from 'connected-react-router'
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
-import styled from 'styled-components';
 import { useInjectReducer } from 'utils/injectReducer';
 import { useInjectSaga } from 'utils/injectSaga';
 import { appBgColor, colors, smallMargin, margin } from 'variables';
@@ -23,16 +19,10 @@ import withWidth from '@material-ui/core/withWidth';
 import { hideFallback } from 'containers/Fallback/actions';
 import { setMenuButtonColor, setIsLogoColoured, setScrollTop, setAppBarBgColor, setShowPreloader } from 'containers/Navigation/actions';
 import { makeMainMenuButtonColor, makeIsLogoColoured, makeAppBarBgColor } from 'containers/Navigation/selectors';
-import { getDimensions, getMenuSetting } from 'helpers';
 import PortfolioHeader from './Portfolio/header';
 import PortfolioList from './Portfolio/list';
 import Services from './Services'
 import Footer from 'components/Footer';
-import { filter, mapKeys } from "lodash"
-
-const MobileBodyWrapper = styled.div`
-  overflow: auto;
-`;
 
 const key = 'home2';
 
@@ -81,7 +71,6 @@ export function HomePage({
   
   useEffect(() => {
     hideFallback();
-    // if (activeSlideIndex === 0) setShowPreloader(true);
     window.addEventListener('scroll', handleScroll);
 
     return () => {
