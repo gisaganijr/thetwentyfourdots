@@ -1,4 +1,5 @@
-<a href="https://thetwentyfourdots.com/">TheTwentyFourDots</a> website used the following React Libraries:
+<a href="https://thetwentyfourdots.com/">TheTwentyFourDots</a> is a responsive website which I have built using React.
+The following are the React Libraries that I used on this React project;
 
 <ul>
 	<li><a href="https://github.com/react-boilerplate/react-boilerplate">React-BoilerPlate</a></li>
