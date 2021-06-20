@@ -44,26 +44,22 @@ const Text = forwardRef(({
       >
         {contentType === 'desktop' ? (
           <Headline 
-            pointerTitle="About us"
+            pointerTitle='About us'
             pointerColor={colors.veryDarkGray}
-            author="Pablo Picasso"
+            author='Pablo Picasso'
             startAni={startAni}
             typingAniDelay={1000}
             headerText={getHeaderText()}
-            longText="We connect ideas at heart, we approach every brand with clear understanding of the business problem. 
-              We provide solution and what return of investment is needed for campaign to be a success. 
-              Our strategy is determined by problem we are facing. 
-              We are adaptable which lead us to a magical journey that never ends.
-            "
-            buttonText="Our capabilities"
+            longText='We connect ideas at heart, we approach every brand with a clear understanding of the business problem. We provide a solution and what return of investment is needed for the campaign to be successful. Our strategy is determined by a problem we are facing. We are adaptable, which leads us to a magical journey that never ends.'
+            buttonText='Our capabilities'
             button={outlinedButton.dark}
             isWideScreen={isWideScreen}
           />
         ) : (
           <Headline 
-            pointerTitle="About us"
+            pointerTitle='About us'
             pointerColor={colors.veryDarkGray}
-            author="Pablo Picasso"
+            author='Pablo Picasso'
             startAni={startAni}
             typingAniDelay={1000}
             headerText={getHeaderText()}

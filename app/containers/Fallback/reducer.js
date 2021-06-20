@@ -1,12 +1,3 @@
-/*
- * HomeReducer
- *
- * The reducer takes care of our data. Using actions, we can
- * update our application state. To add a new action,
- * add it to the switch statement in the reducer function
- *
- */
-import React from 'react';
 import produce from 'immer';
 import { colors } from 'variables';
 import { SHOW_FALLBACK, HIDE_FALLBACK, RETURN_TO_DEFAULT  } from './constants';

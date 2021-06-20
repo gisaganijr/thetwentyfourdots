@@ -62,7 +62,7 @@ export function NavigationMenu(props) {
             </StyledLink>
           </ListItem>
           <ListItem>
-            <StyledLink {...linkProps} onClick={() => handleClick('/what-we-do')}>WHAT WE DO
+            <StyledLink {...linkProps} onClick={() => handleClick('/what-we-do')}>WHAT WE DO?
             </StyledLink>
           </ListItem>
           <ListItem>

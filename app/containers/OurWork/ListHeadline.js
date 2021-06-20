@@ -27,7 +27,7 @@ const Headline = forwardRef(({width, widthCat, isWideScreen, isLogoColoured, por
               >
                 A <span style={{color: colors.turquoise}}>collection</span> of our creativity
               </P>
-              <P noMargin title size="sm">
+              <P title size="sm">
                 Architectural visualisation, Branding, 3D and graphic design, Environment and many more.
               </P>
           </div>

@@ -81,7 +81,7 @@ const Headline = ({widthCat, marginBottom}) => {
           renderAni={(aniProps) => (
             <div ref={headerTextRef} style={{ ...aniProps ? { ...aniProps } : { opacity: 0 }} }>
               <p>
-                Our team can create stunning visuals with diverse digital discipline, from marketing promotional items, research, brand strategy, info graphics, architectural services such as 3D models, interior design and complete set of shop drawing.
+                Our team can create stunning visuals with diverse digital disciplines, from marketing promotional items, research, brand strategy, infographics, architectural visualization such as 3D models, interior design, and a complete set of shop drawings.
               </p>
             </div>
           )} 

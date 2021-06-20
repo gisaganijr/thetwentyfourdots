@@ -39,7 +39,7 @@ const Moods = forwardRef(({width, widthCat, isWideScreen}, ref) => {
   const [isMoodsItemScrolled, setIsMoodsItemScrolled] = useState(false);
   const [items, setItems] = useState([
     { id: 0, value: 'Perseverance'},
-    { id: 1, value: 'Listening to the inner voice'},
+    { id: 1, value: 'Listening to our inner voice'},
     { id: 2, value: 'Focus on goal'},
     { id: 3, value: 'Daydreaming'},
     { id: 4, value: 'Avant-garde'},
@@ -134,8 +134,7 @@ const Moods = forwardRef(({width, widthCat, isWideScreen}, ref) => {
             config={{...config.gentle }}
             renderAni={(aniProps) => (
               <p ref={headlineTextRef} style={{ ...aniProps ? { ...aniProps } : { opacity: 0 }} }>
-                A team full of ideas. We believe in our creativity and imagination to make things happen. In every obstacle, we strive and excel to provide result. Circumspection is not in our DNA. 
-                Our framework does not overvalue our commitment, but sets realistic goals and quality to precision.
+                We are a team full of ideas. We believe in our creativity and imagination to make things happen. In every obstacle, we strive and excel to provide results. Circumspection is not in our DNA. Our framework does not overvalue our commitment but sets realistic goals and quality to precision.
               </p>
             )}
           />

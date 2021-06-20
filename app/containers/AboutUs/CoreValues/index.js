@@ -20,7 +20,7 @@ const CoreValues = forwardRef(({width, widthCat, isWideScreen}, ref) => {
       {
         id: 1,
         title: 'Teamwork',
-        longText: 'We at thetwentyfourdots believe and trust each other. A few of us are modest, others are resourceful but what we have in common is one goal, We seek win-for-all solutions.  Embracing challenges, think big and deliver outstanding results.',
+        longText: 'We at thetwentyfourdots believe and trust each other. A few of us are modest, others are resourceful but what we have in common is one goal, We seek win-for-all solutions. Embracing challenges, think big and deliver outstanding results.',
         button: {
           title: 'Explore projects',
           link: ''
@@ -30,7 +30,7 @@ const CoreValues = forwardRef(({width, widthCat, isWideScreen}, ref) => {
       {
         id: 2,
         title: 'Creative thinking',
-        longText: 'We champion ideas and providing client a clear direction and furnishing style scales and mood images. Sharing thought and asking question help us translate design brief distinctly. Through this practice we establish exceptional service to our clientele.',
+        longText: 'We champion ideas and provide clients with a clear direction and furnishing style scales and mood images. Sharing thoughts and asking questions help us translate the design brief distinctly. Through this practice, we establish exceptional service to our clientele.',
         button: {
           title: 'Explore Process',
           link: ''
@@ -40,7 +40,7 @@ const CoreValues = forwardRef(({width, widthCat, isWideScreen}, ref) => {
       {
         id: 3,
         title: 'Building ideas',
-        longText: 'We create in styles by providing high-end 3D visuals and digital composition.  Our design software is not just a tool, Its our end-point solution to create meaningful journey with us and bring ideas to life. We are twentyfourdots as one.',
+        longText: `We create styles by providing high-end 3D visuals and digital composition. Our design software is not just a tool, it's our end-point solution to create a meaningful journey with us and bring ideas to life. We are thetwentyfourdots as one.`,
         button: {
           title: 'Explore Process',
           link: ''
@@ -99,7 +99,7 @@ const CoreValues = forwardRef(({width, widthCat, isWideScreen}, ref) => {
         </div>
         <div style={{ marginTop: isWideScreen ? '6rem' : contentMarginSmall, marginBottom: '0px'}}>
           <P noMargin={true} style={{ color: colors.white}} size="xxs">thetwentyfourdots in heart and mind</P>
-          <P noMargin={true} fontType="medium" size="md" style={{ color: colors.white}}>We are thinkers, Our behaviour becomes our identity.</P>
+          <P noMargin={true} fontType="medium" size="md" style={{ color: colors.white}}>We are thinkers, our behaviour becomes our identity.</P>
         </div>
       </ContentWrapper>
     </PageSection>

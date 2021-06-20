@@ -61,9 +61,9 @@ const Text = forwardRef(({
                 </P>
               )
             }
-            longText="The characters of our capabilites, environment design, digital campaign, architecture and 3D assets."
+            longText='The characters of our capabilities, environment design, digital campaign, architecture, and 3D assets.'
             textColor={colors.white}
-            buttonText="Learn more"
+            buttonText='Learn more'
             button={outlinedButton.light}
             isWideScreen={isWideScreen}
           />

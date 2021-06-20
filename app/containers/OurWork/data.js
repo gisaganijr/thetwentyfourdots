@@ -7,8 +7,8 @@ const works = [
     layout: { x: 0, y: 0, w: 6, h: 1 },
     smLayout: { x: 0, y: 0, w: 12, h: 1 },
     maxHeightSource: [2],
-    title: 'thetwentyfourdots',
-    url: '/portfolio/TheTwentyFourDots',
+    title: 'CaseStudy',
+    url: '/portfolio/CaseStudy',
     description: '3D Environment'
   },
   {

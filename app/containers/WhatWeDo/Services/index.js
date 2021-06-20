@@ -25,10 +25,10 @@ const Services = forwardRef(({width, widthCat, isWideScreen}, ref) => {
       titleColor: colors.orange,
       logo: WhatWeDoCreative,
       logoViewBox: '0 0 109.36 113.63',
-      longText: 'Our talent can create an amazing experience to our audience and makes a big impact on your business. Making ideas happen with visuals, we connect with people’s mind and heart.',
+      longText: 'Our talent can create amazing experience for our audience and make a big impact on your business. Making ideas happen with visuals, we connect with people’s mind and heart.',
       services: [
         { id: 0, title: 'Creative Concept and Ideas' }, 
-        { id: 1, title: 'Marketing and Communication Collateral' }
+        { id: 1, title: 'Marketing Communication and Collaterals' }
       ]
     },
     {
@@ -37,7 +37,7 @@ const Services = forwardRef(({width, widthCat, isWideScreen}, ref) => {
       titleColor: colors.yellow,
       logo: WhatWeDoBrand,
       logoViewBox: '0 0 92 91.69',
-      longText: 'We will collaborate with you and share us all your query and we will help you translate it to impressive and engaging brand identity that helps your business stand out from the crowd and match perfectly from your target audience.',
+      longText: 'We will collaborate with you and share all your queries, and we will help you translate them into an impressive and engaging brand identity that helps your business stand out from the crowd and match perfectly with your target audience.',
       services: [
         { id: 0, title: 'Strategy and Plan'},
         { id: 1, title: 'Rebranding'},
@@ -50,7 +50,7 @@ const Services = forwardRef(({width, widthCat, isWideScreen}, ref) => {
       titleColor: colors.turquoise,
       logo: WhatWeDoDigital,
       logoViewBox: '0 0 93.12 93.71',
-      longText: 'We are equipped with experience and knowledge to build digital design with the help of our latest and advance software',
+      longText: 'We are equipped with experience and knowledge to build digital design with the help of our latest and advanced software.',
       services: [
         { id: 0, title: 'Illustration' }, 
         { id: 1, title: 'Marketing collaterals' }, 
@@ -66,7 +66,7 @@ const Services = forwardRef(({width, widthCat, isWideScreen}, ref) => {
       titleColor: colors.cyan,
       logo: WhatWeDo3D,
       logoViewBox: '0 0 80 90.48',
-      longText: 'Expertise in space and 3D design construction we can yield an images or visual into high-end picture like renders for our client to efficiently envision their ideas and objective.',
+      longText: 'With our expertise in space and 3D design construction, we can yield images or visuals into a high-end picture-like render for our client to efficiently envision their ideas and objective.',
       services: [
         { id: 0, title: 'Interior Design' }, 
         { id: 1, title: 'CAD services - Shop drawing, and other construction needs' },

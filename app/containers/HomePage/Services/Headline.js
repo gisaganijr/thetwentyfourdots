@@ -93,7 +93,7 @@ const Headline = ({widthCat, marginBottom, isWideScreen }) => {
                 ...aniProps ? { ...aniProps } : { opacity: 0 }
               }}
             >
-              from digital campaigns, branding identity, 3D asses environment, exhibition and retail display, we provide solution to our clients need and deliver high-end result.
+              From digital campaigns, branding identity, 3D assets environment, exhibition, and retail display, we provide solutions to our client's needs and deliver high-end results.
             </p>
           )}
         />

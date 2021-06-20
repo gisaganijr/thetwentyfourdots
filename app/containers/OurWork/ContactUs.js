@@ -35,8 +35,7 @@ const ContactUs = forwardRef(({width, widthCat, isWideScreen, isLogoColoured, po
               Interested?
             </P>
             <P noMargin title size="sm">
-              Need graphic design services, modeling assets 
-              or 3d visualization in your company, Let’s have a chat.
+              Need graphic design services, modeling assets, or 3d visualization in your company? Let’s have a chat.
             </P>
             <div style={{ marginTop: contentMargin }}>
               <CustomOutlinedButton color={colors.white} size="small" onClick={() => push('/contact-us')}>

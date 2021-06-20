@@ -50,13 +50,22 @@ const CopyrightWrapper = styled.div`
   align-items: flex-end;
 `
 
+const StyledLink = styled.a`
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+
 const MainNavigation = ({showWelcome, showPreloader, showFallback, isLogoColoured, mainMenuButtonColor, location, push }) => {
   if (showWelcome || showPreloader || showFallback)
     return null;
 
   return (
     <>
-      <Logo width="10%" isColoured={isLogoColoured} style={{ position: 'fixed', top: margin.page.top, left: margin.page.left, zIndex: '999'}}/>
+      <StyledLink onClick={() => push('/')}>
+        <Logo width="10%" isColoured={isLogoColoured} style={{ position: 'fixed', top: margin.page.top, left: margin.page.left, zIndex: '999'}}/>
+      </StyledLink>
       
       <LetsTalkWrapper>
         <CustomOutlinedButton 
@@ -151,7 +160,9 @@ export function Navigation({
                   elevation={0}
                 >
                   <CustomToolbar bgColor={appBarBgColor}>
-                    <Logo width="100px" isWideScreen={false} isColoured={isLogoColoured} />
+                    <StyledLink onClick={() => push('/')}>
+                      <Logo width="100px" isWideScreen={false} isColoured={isLogoColoured} />
+                    </StyledLink>
                     <MenuIcon isWideScreen={isWideScreen} ref={menuIconRef} hide={hideMobileMenuIcon()} onClick={toggleMainDrawer} color={mainMenuButtonColor} />
                   </CustomToolbar>
                 </AppBar>

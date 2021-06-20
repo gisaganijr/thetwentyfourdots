@@ -1,9 +1,11 @@
 import { colors } from 'variables';
 
 const portfolios = {
-  "TheTwentyFourDots": {
-    title: "thetwentyfourdots",
-    desc: "Virtual HQ internal project of our agency. We are excited to use different approach by using plugins like Forest Pack and Railclone for our virtual walkthrough project where audience can intergrate in our 3D scene.", 
+  "CaseStudy": {
+    title: "Case Study",
+    desc: 'We created our own virtual headquarters using the logo symbol of the agency, we converted it into a stunning high-end architectural visual. Our plan is to convert this image into a 360 virtual walkthrough for our audience where they can integrate and explore the 3D environment.',
+    detailTitle: 'The Virtual Space',
+    detailDesc: 'The images below are the renders for different areas inside the headquarters. These case studies help us build the environment using Forest Pack plugins in 3DS max, lighting with Vray Hotfix.',
     image: {
       src: `${process.env.PUBLIC_URL}/assets/images/portfolio/thetwentyfourdots/ttfd_Scene-A_Homepage Cover_2080x1440.jpg`,
       width: 2560,
@@ -36,7 +38,7 @@ const portfolios = {
       },
       {
         itemId: 4,
-        text: `"An environment with virtual tour function for audience to experience the actual space and proportion"`,
+        text: `An environment with virtual tour function for audience to experience the actual space and proportion.`,
         bgColor: "turquoise",
         color: "white",
         layout: { x: 6, y: 2, w: 12, h: 1 },
@@ -68,7 +70,7 @@ const portfolios = {
       },
       {
         itemId: 9,
-        text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel purus vitae nisi posuere dignissim quis vel orci."`,
+        text: `2nd-Storey area and collaboration space concept in a twisted, flowing shape concept. `,
         bgColor: "turquoise",
         color: "white",
         layout: { x: 0, y: 5, w: 12, h: 1 },
@@ -112,7 +114,7 @@ const portfolios = {
       },
       {
         itemId: 15,
-        text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel purus vitae nisi posuere dignissim quis vel orci."`,
+        text: `Glass installation access to the lounge area with a featured wall in the entrance and exit.`,
         bgColor: "turquoise",
         color: "white",
         layout: { x: 0, y: 12, w: 12, h: 1 },
@@ -120,9 +122,11 @@ const portfolios = {
       },
     ],
   },
-  "InteriorDesign": {
-    title: "Interior Design",
-    desc: "We are invited on this project to create and divide a small room into 2 types of room where student can collaborate and relax after school hours. Applying vibrant colour with cosy look and feel will give them a sense of relaxation to do more and be active in developing their skills", 
+  "SunflowerLoft": {
+    title: 'Sunflower Loft',
+    desc: 'A proposal for school room renovation to create and divide a small room into 2 types where students can collaborate and relax after school hours. ' +
+      'Applying vibrant colours with a cozy look and feel will give them a sense of relaxation to do more and be active in developing their skills.', 
+    detailDesc: 'An interior design with lively colour furniture complimented students for uplifting their creativity and passion for research and study.',
     image: {
       src: `${process.env.PUBLIC_URL}/assets/images/portfolio/CHIJ ID/CHIJ_Homepage Cover_Lounge A1_2080x1440.jpg`,
       width: 2080,
@@ -191,7 +195,7 @@ const portfolios = {
       },
       {
         itemId: 10,
-        text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel purus vitae nisi posuere dignissim quis vel orci."`,
+        text: 'Having fun while learning is always a great practice when developing your skills and creativity.',
         bgColor: "turquoise",
         color: "white",
         layout: { x: 0, y: 5, w: 12, h: 1 },
@@ -200,8 +204,8 @@ const portfolios = {
     ],
   },
   "CloverResort": {
-    title: "Clover Resort",
-    desc: "Concept proposal for architectural firm providing them a fantastic resort concept of a clover leaf translating design to structure.", 
+    title: 'Clover Resort',
+    desc: 'Concept proposal for an architectural firm where we develop a concept from a cloverleaf and translate it to a high-quality image render for visual representation.', 
     image: {
       src: `${process.env.PUBLIC_URL}/assets/images/portfolio/Clover Resort/C-1.3_2080x1440.jpg`,
       width: 3000,
@@ -234,19 +238,11 @@ const portfolios = {
         layout: { x: 6, y: 1, w: 6, h: 1 },
         smLayout: { x: 0, y: 3, w: 12, h: 1 },
       },
-      {
-        itemId: 5,
-        text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel purus vitae nisi posuere dignissim quis vel orci."`,
-        bgColor: "turquoise",
-        color: "white",
-        layout: { x: 0, y: 2, w: 12, h: 1 },
-        smLayout: { x: 0, y: 4, w: 12, h: 1 },
-      },
     ],
   },
   "Residential": {
     title: "Residential",
-    desc: "Our team created a sample exhibition booth design for one of our client to visualize the look and feel of the concept.", 
+    desc: 'Our team created a minimalist interior residential settings for living room dining and kitchen.', 
     image: {
       src: `${process.env.PUBLIC_URL}/assets/images/portfolio/Residential/Residential_Homepage Cover_2080x1440.jpg`,
       width: 1000,
@@ -270,59 +266,7 @@ const portfolios = {
         height: 1440,
         layout: { x: 6, y: 0, w: 6, h: 1 },
         smLayout: { x: 0, y: 1, w: 12, h: 1 },
-      }, {
-        itemId: 3,
-        text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel purus vitae nisi posuere dignissim quis vel orci."`,
-        bgColor: "turquoise",
-        color: "white",
-        layout: { x: 0, y: 1, w: 12, h: 1 },
-        smLayout: { x: 0, y: 2, w: 12, h: 1 },
-      }
-      // {
-      //   seq: 2,
-      //   itemId: 2,
-      //   image: `${process.env.PUBLIC_URL}/assets/images/portfolio/Exhibition Booth/.jpg`,
-      //   width: 2560,
-      //   height: 1440,
-      //   layout: { x: 0, y: 1, w:6, h: 1 },
-      //   smLayout: { x: 0, y: 2, w: 12, h: 1 },
-      // },
-      // {
-      //   seq: 3,
-      //   itemId: 3,
-      //   text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel purus vitae nisi posuere dignissim quis vel orci."`,
-      //   bgColor: "turquoise",
-      //   color: "white",
-      //   layout: { x: 6, y: 2, w: 12, h: 1 },
-      //   smLayout: { x: 0, y: 3, w: 12, h: 1 },
-      // },
-      // {
-      //   seq: 4,
-      //   itemId: 4,
-      //   image: `${process.env.PUBLIC_URL}/assets/images/portfolio/Exhibition Booth/.jpg`,
-      //   width: 2560,
-      //   height: 1440,
-      //   layout: { x: 0, y: 3, w: 6, h: 1 },
-      //   smLayout: { x: 0, y: 4, w: 12, h: 1 },
-      // },
-      // {
-      //   seq: 5,
-      //   itemId: 5,
-      //   image: `${process.env.PUBLIC_URL}/assets/images/portfolio/Exhibition Booth/.jpg`,
-      //   width: 2560,
-      //   height: 1440,
-      //   layout: { x: 6, y: 3, w: 6, h: 1 },
-      //   smLayout: { x: 0, y: 5, w: 12, h: 1 },
-      // },
-      // {
-      //   seq: 6,
-      //   itemId: 6,
-      //   text: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel purus vitae nisi posuere dignissim quis vel orci."`,
-      //   bgColor: "turquoise",
-      //   color: "white",
-      //   layout: { x: 0, y: 4, w: 12, h: 1 },
-      //   smLayout: { x: 0, y: 6, w: 12, h: 1 },
-      // },
+      }, 
     ],
   },
   "HPFixtures": {

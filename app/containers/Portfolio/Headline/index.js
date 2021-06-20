@@ -28,9 +28,9 @@ const Headline = forwardRef(({width, widthCat, isWideScreen, isLogoColoured, por
               noMargin={true} 
               style={{ color: colors.veryDarkGray, marginBottom: "1rem" }}
             >
-              {portfolio.title}
+              {portfolio.detailTitle || portfolio.title}
             </P>
-            <P noMargin title size="sm">{portfolio.desc}</P>
+            <P noMargin title size="sm">{portfolio.detailDesc || portfolio.desc}</P>
           </div>
         </ContentInnerWrapper>
       </ContentWrapper>

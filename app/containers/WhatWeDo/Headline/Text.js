@@ -59,8 +59,8 @@ const Text = forwardRef(({
                 </P>
               )
             }
-            longText="We are equipped with creative knowledge with unique approach in providing solutions. We believe in every design we must communicate."
-            buttonText="Explore portfolio"
+            longText='We are equipped with creative knowledge with a unique approach in providing solutions. We believe in every design we must communicate.'
+            buttonText='Explore portfolio'
             button={outlinedButton.dark}
             isWideScreen={isWideScreen}
           />
